@@ -78,10 +78,10 @@ Ne pas pas redistribuer le gain
 
 Pour plusieurs bien, on sommera chaque sous part.
 
-Pour n investisseur, la part de l'investisseur Pj vaut:
+Pour n investisseurs, la part de l'investisseur Pj vaut:
 
 ```math
-P_j=\dfrac{D_j}{\sum\limits_{i=0}^n D_i} * (V + \sum_{i=0}^n G_i + \sum_{i=0}^n P_i) - G_j
+P_j=\dfrac{D_j}{\sum\limits_{i=1}^n D_i} * (V + \sum_{i=1}^n G_i + \sum_{i=1}^n P_i) - G_j
 ```
 Avec:
 
