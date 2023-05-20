@@ -1,10 +1,10 @@
 # soult
 
-La motivation de la creation de ce répertoire est le problème rencontré lors de la liquidation de bien entre deux personnes suite a un divorce sous le regime de séparation de bien. Il y'a un vide juridique alors que qu'il n'est pas si dur de répartir un bien équitablement. Pourtant le notaire et les parties concernés arrivent à des propositions mathématiquement injustes et relevent souvent plus du marchandage de tapis que de calculs réels, et si vous cherchez sur le net un calcul d'autorité, vous trouverez surtout des simulateurs payant ou des formules extrement incomplètes sur des sites de notaires/avocats cherchant a vous faire acheter leurs services. C'est pourquoi j'expose ici ce que j'ai expliqué à mon amie dans le but d'établir une proposition juste sur le partage d'un bien. Le mieux avant d'arriver à un accord à l'amiable est de mettre dans l'accord de vente les conditions de liquidations https://paris.notaires.fr/fr/actualites/achat-et-revente-dun-bien-en-indivision-quotes-parts-dacquisition-et-repartition-du-prix-de-vente
+Ce document n'est PAS produit par un professionel et n'a pas vocation à être utilisé pour imposer des conditions ou à se substituer à un juge en cas de procés. Je publie simplement ici les solutions que je propose au problème rencontré lors de la liquidation de biens entre deux personnes suite a un divorce sous le regime de séparation de biens. Il y'a un vide juridique alors que qu'il n'est pas si dur de répartir un bien équitablement. Pourtant le notaire et les parties concernés arrivent à des propositions mathématiquement injustes et relevent souvent plus du marchandage de tapis que de calculs réels, et si vous cherchez sur internnet un calcul qui fait référence, vous trouverez des simulateurs payant ou des formules extrement incomplètes sur des sites de notaires/avocats cherchant a vous faire acheter leurs services. C'est pourquoi j'expose ici ce que j'ai expliqué à mon amie dans le but d'établir une proposition juste sur le partage d'un bien. Le mieux avant d'arriver à l'accord à l'amiable suite a une séparation est de mettre dés l'accord de vente les conditions de liquidations https://paris.notaires.fr/fr/actualites/achat-et-revente-dun-bien-en-indivision-quotes-parts-dacquisition-et-repartition-du-prix-de-vente
 
-Soulevez une issue qui explique votre point de vue si le calcul est faux ou lèse d'une manière ou d'une autre un parti. Ou une MR si vous voulez généraliser la formule/apporter plus d'informations.
+Soulevez une issue qui explique votre point de vue si le calcul est faux ou lèse d'une manière ou d'une autre un parti ou si vous avez une question. Faites une PR si vous voulez généraliser la formule/apporter plus d'informations.
 
-Je partage aussi un script python dans le repo permettant de simuler vos part dans un partage à deux avec un pret partagé.
+Un script python dans le repo permet de simuler vos part dans un partage à deux avec un pret partagé.
 
 ## Partage des biens propres
 
@@ -72,3 +72,15 @@ Prendre V pour la valeur d'achat et non pas l'estimation actuelle.
 Prendre P pour le pret déja payé au lieu du P restant.
 
 Ne pas pas redistribuer le gain
+
+## Generalisation
+
+
+Pour plusieurs bien, on sommera chaque sous part.
+
+Pour n investisseur, la part de l'investisseur j Pj sur le bien de valeur estimée V vaut:
+
+```math
+D_j / \left(sum{i=0}^n D_i \right) * (V + sum{i=0}^n G_i + sum{i=0}^n P_i) - G_j
+```
+
