@@ -81,6 +81,6 @@ Pour plusieurs bien, on sommera chaque sous part.
 Pour n investisseur, la part de l'investisseur j Pj sur le bien de valeur estimée V vaut:
 
 ```math
-\frac{D_j}{\sum{i=0}^n D_i} * (V + \sum{i=0}^n G_i + \sum{i=0}^n P_i) - G_j
+\frac{D_j}{\sum_{i=0}^n D_i} * (V + \sum_{i=0}^n G_i + \sum_{i=0}^n P_i) - G_j
 ```
 
