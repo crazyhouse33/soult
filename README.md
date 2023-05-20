@@ -84,10 +84,12 @@ Pour n investisseur, la part de l'investisseur Pj vaut:
 P_j=\dfrac{D_j}{\sum\limits_{i=0}^n D_i} * (V + \sum_{i=0}^n G_i + \sum_{i=0}^n P_i) - G_j
 ```
 Avec:
-```math
-D_k= Total des dépenses de l'investisseur k sur le bien
-V  = Valeur estimé du bien
-P_k= Part du pret restant que l'investisseur k détient
-G_k= Gain direct ou indirect qu'a touché l'investisseur k grace au bien 
-```
+
+$D_k=$ Total des dépenses de l'investisseur k sur le bien
+
+$V=$ Valeur estimé du bien
+
+$P_k=$ Part du pret restant que l'investisseur k détient
+
+$G_k=$ Gain direct ou indirect qu'a touché l'investisseur k grace au bien
 
